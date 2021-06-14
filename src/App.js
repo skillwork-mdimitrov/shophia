@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -18,6 +18,21 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
+            One of three columns
+          </div>
+          <div className="col-sm">
+            One of three columns
+          </div>
+          <div className="col-sm">
+            One of three columns
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
