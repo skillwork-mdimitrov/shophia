@@ -1,11 +1,4 @@
 /* make the customizations */
-$theme-colors: (
-    "info": tomato,
-    "danger": teal
-);
-
-$body-bg:purple;
-$body-color: red;
 
 /* import bootstrap to set changes */
 @import "../node_modules/bootstrap-scss/";

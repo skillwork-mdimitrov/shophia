@@ -1,0 +1,2 @@
+1. Lower case + CSS text-transform in NavBar
+2. @import "../node_modules/bootstrap-scss/" in custom.scss make local imports

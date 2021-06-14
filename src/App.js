@@ -1,39 +1,25 @@
-import logo from './logo.svg';
 import './App.scss';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
+  const phoneNum = "+001 555 801";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-sm">
-            One of three columns
-          </div>
-          <div className="col-sm">
-            One of three columns
-          </div>
-          <div className="col-sm">
-            One of three columns
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand href="#home">Call {phoneNum}</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+        <Navbar.Text>
+          WELCOME MSG!
+        </Navbar.Text>
+        <Nav> 
+          <Nav.Link href="#account">MY ACCOUNT</Nav.Link>
+          <Nav.Link href="#wishlist">MY WISHLIST</Nav.Link>
+          <Nav.Link href="#login">LOGIN</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
