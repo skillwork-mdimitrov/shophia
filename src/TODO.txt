@@ -4,4 +4,4 @@
 4. Naming convention for MyNav + MyNavBar, etc.
 5. Check if the font CDN is enough by itself.
 6. Optimize the className and or seperate scss file. (<h1 className="brandFont">Shophia</h1>)
-7. Rename Nav
+7. Rename Nav + NavBar
