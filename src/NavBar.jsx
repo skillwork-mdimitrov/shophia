@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 
-const NavBar = () => {
+const MyNavBar = () => {
   const phoneNum = "+001 555 801";
   const phoneIcon = <FontAwesomeIcon icon={faPhoneAlt} />
 
@@ -28,4 +28,4 @@ const NavBar = () => {
   );
 }
 
-export { NavBar };
+export { MyNavBar };

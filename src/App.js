@@ -1,9 +1,13 @@
 import './App.scss';
-import { NavBar } from './NavBar';
+import { MyNav } from './Nav';
+import { MyNavBar } from './NavBar';
 
 function App() {
   return (
-    <NavBar />
+    <>
+      <MyNavBar />
+      <MyNav/>
+    </>
   );
 }
 

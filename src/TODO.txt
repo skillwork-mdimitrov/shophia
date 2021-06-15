@@ -1,3 +1,4 @@
 1. Lower case + CSS text-transform in NavBar
 2. @import "../node_modules/bootstrap-scss/" in custom.scss make local imports
 3. See if NavBar having <div></div> wrapper is an issue
+4. Naming convention for MyNav + MyNavBar, etc.
