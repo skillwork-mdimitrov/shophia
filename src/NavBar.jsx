@@ -1,11 +1,9 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { phoneIcon } from './AwesomeIcons';
 
 const TopNavBar = () => {
   const phoneNum = "+001 555 801";
-  const phoneIcon = <FontAwesomeIcon icon={faPhoneAlt} />
 
   return (
     <Navbar bg="light" expand="lg">
