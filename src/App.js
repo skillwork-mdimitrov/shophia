@@ -1,9 +1,7 @@
 import './App.scss';
 import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './AwesomeIcons';
-import Carousel from 'react-bootstrap/Carousel';
+import { PhotoshootCarousel } from './Carousel';
 import { CurrencyDropdownBtn } from './DropdownButton';
-import { ReactComponent as BeccaPhotoshoot } from './img/photoShoot-1.svg';
-import { ReactComponent as MidSeasonSale } from './img/mid-season-sale.svg';
 import { TopNavBar } from './NavBar';
 import { QuickLinks } from './Nav';
 
@@ -21,26 +19,7 @@ function App() {
         <CurrencyDropdownBtn inlineFlex />
       </div>
 
-      <Carousel>
-        <Carousel.Item>
-          <BeccaPhotoshoot alt="First slide" />
-          <Carousel.Caption style={{top: "15%"}}>
-            <MidSeasonSale />
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <BeccaPhotoshoot alt="Second slide" />
-          <Carousel.Caption style={{top: "15%"}}>
-            <MidSeasonSale />
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <BeccaPhotoshoot alt="Third slide" />
-          <Carousel.Caption style={{top: "15%"}}>
-            <MidSeasonSale />
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <PhotoshootCarousel/>
     </>
   );
 }
