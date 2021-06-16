@@ -11,4 +11,5 @@
 11. DropdownButton inline style move to StyledComponent
 12. Remove all style={} that I find
 13. Feed karosel new pics with the inverted triangle Photoshopped pics.
+14. Get correct fonts from PS
 

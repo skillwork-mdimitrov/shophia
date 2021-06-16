@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="283" height="283" viewBox="0 0 283 283">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #d9bf8f;
+        stroke: #fff;
+        stroke-linejoin: round;
+        fill-opacity: 0;
+      }
+
+      .cls-1 {
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-width: 1px;
+      }
+
+      .cls-2, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 30px;
+      }
+
+      .cls-4, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-6, .cls-9 {
+        text-anchor: middle;
+      }
+
+      .cls-10, .cls-4, .cls-6 {
+        font-family: "Lato-Bold";
+        font-weight: bold;
+      }
+
+      .cls-5, .cls-6 {
+        font-size: 90.028px;
+      }
+
+      .cls-10, .cls-8, .cls-9 {
+        font-size: 48px;
+      }
+
+      .cls-11 {
+        font-size: 36px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect x="5" y="5" width="273" height="273" class="cls-1"/>
+    <path d="M14.971,14.971 L271.711,14.971 L271.711,271.711 L14.971,271.711 L14.971,14.971 Z" class="cls-2"/>
+    <g>
+      <text transform="translate(141 56) scale(0.65 0.65)" class="cls-3"><tspan class="cls-4">MID-SEASON</tspan></text>
+      <text transform="translate(141 137) scale(0.65 0.65)" class="cls-5"><tspan class="cls-6">SALE</tspan></text>
+      <path d="M65.937,175.595 L98.614,175.595 L98.614,176.248 L65.937,176.248 L65.937,175.595 Z" class="cls-7"/>
+      <path d="M180.961,175.595 L213.638,175.595 L213.638,176.248 L180.961,176.248 L180.961,175.595 Z" class="cls-7"/>
+      <path d="M182.008,184.002 L242.000,184.002 L242.000,184.997 L182.008,184.997 L182.008,184.002 Z" class="cls-7"/>
+      <path d="M39.008,184.002 L99.000,184.002 L99.000,184.997 L39.008,184.997 L39.008,184.002 Z" class="cls-7"/>
+      <text transform="translate(141 186) scale(0.65 0.65)" class="cls-3"><tspan class="cls-4">UP TO</tspan></text>
+      <text transform="translate(143 236) scale(0.65 0.65)" class="cls-8"><tspan class="cls-9"><tspan class="cls-10">50<tspan class="cls-11"> %</tspan> 	 OFF</tspan></tspan></text>
+    </g>
+  </g>
+</svg>
