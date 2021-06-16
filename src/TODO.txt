@@ -5,3 +5,5 @@
 5. Check if the font CDN is enough by itself.
 6. Optimize the className and or seperate scss file. (<h1 className="brandFont">Shophia</h1>)
 7. Rename Nav + NavBar
+8. Possibly rename DropdownButton
+9. Make DropdownButton at least change the currency value.
