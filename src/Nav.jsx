@@ -1,9 +1,9 @@
 import Nav from 'react-bootstrap/Nav';
 
-const QuickLinks = ({ links }) => {
+const QuickLinks = ({ links, inlineFlex }) => {
 
   const navLinks = links.map(link => {
-    // currently supports only font-awesome icons as links and strings (eg. Home, Gallery)
+    // currently supports only font-awesome icons as links and pure strings (eg. Home, Gallery)
     const key = link?.props?.icon?.iconName ? link.props.icon.iconName : link;
     
     return (
@@ -15,7 +15,8 @@ const QuickLinks = ({ links }) => {
 
 
   return (
-    <Nav>
+    // Move to styled`component
+    <Nav style={inlineFlex && {display: 'inline-flex'}}>
       {navLinks}
     </Nav>
   )
