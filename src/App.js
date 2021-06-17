@@ -1,5 +1,5 @@
 import './App.scss';
-import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './AwesomeIcons';
+import { clockIcon, facebookIcon, instagramIcon, pinterestIcon, twitterIcon, planeIcon } from './AwesomeIcons';
 import { PhotoshootCarousel } from './Carousel';
 import { CurrencyDropdownBtn } from './DropdownButton';
 import { TopNavBar } from './NavBar';
@@ -7,7 +7,7 @@ import { QuickLinks } from './Nav';
 
 function App() {
   const subPageLinks = ['Home', 'Gallery', 'Categories', 'Pages'];
-  const socialMediaLinks = [facebookIcon, instagramIcon, pinterestIcon, twitterIcon]
+  const socialMediaLinks = [facebookIcon, twitterIcon, pinterestIcon, instagramIcon]
 
   return (
     <>
@@ -19,7 +19,24 @@ function App() {
         <CurrencyDropdownBtn inlineFlex />
       </div>
 
-      <PhotoshootCarousel/>
+      <div>
+        <PhotoshootCarousel />
+      </div>
+
+      <div id='content'>
+        <aside className='arrow'>
+          {planeIcon} FREE SHIPPING
+        </aside>
+      </div>
+
+      <div>
+        <a href="#" className="aLink">
+          <span className="myButton ribbon">
+            {clockIcon}
+            30-DAYS RETURNS
+            </span>
+        </a>
+      </div>
     </>
   );
 }

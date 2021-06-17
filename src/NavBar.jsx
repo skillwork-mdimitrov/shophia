@@ -4,6 +4,7 @@ import { phoneIcon } from './AwesomeIcons';
 
 const TopNavBar = () => {
   const phoneNum = "+001 555 801";
+  const userName = "JOHN";
 
   return (
     <Navbar bg="light" expand="lg">
@@ -14,7 +15,7 @@ const TopNavBar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
         <Navbar.Text>
-          WELCOME MSG!
+          WELCOME {userName}!
         </Navbar.Text>
         <Nav>
           <Nav.Link href="#account">MY ACCOUNT</Nav.Link>

@@ -12,4 +12,6 @@
 12. Remove all style={} that I find
 13. Feed karosel new pics with the inverted triangle Photoshopped pics.
 14. Get correct fonts from PS
+15. Ribbon in custom css .a color !important fix possibly
+16. Remove hard coded pixels from Ribbon
 
