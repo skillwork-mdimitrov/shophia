@@ -1,4 +1,5 @@
 $hover-color: #cfb4f7;
+$ribbon-size: 1.5em;
 
 .aLink {
   text-decoration:none;
@@ -45,6 +46,7 @@ $hover-color: #cfb4f7;
 .ribbon {
   background-color: black;
 
+  font-size: $ribbon-size;
   border-width:2px 0;
   position:relative;
   display: inline-block;

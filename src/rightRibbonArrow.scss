@@ -2,33 +2,31 @@ $color-arrow: #D9BE8F;
 
 #content {
   width: 160px;
-  margin: 25px auto;
+  margin: 5px;
 }
 
-aside {
+.arrow {
+  background-color: $color-arrow;
   color: white;
   margin: 20px 0;
   line-height: 34px;
   position: relative;
   cursor: pointer;
   user-select: none;
-  &.arrow {
-    background-color: $color-arrow;
-    &:after, &:before {
-      border-width: 17px 0 17px 17px;
-    }
-    &:before {
-      border-color: $color-arrow transparent;
-      left: -17px;
-    }
-    &:after {
-      border-color: transparent $color-arrow;
-      right: -17px;
-    }
+  &::after, &::before {
+    border-width: 17px 0 17px 17px;
+  }
+  &::before {
+    border-color: $color-arrow transparent;
+    left: -17px;
+  }
+  &::after {
+    border-color: transparent $color-arrow;
+    right: -17px;
   }
 }
 
-aside:before, aside:after {
+aside::before, aside::after {
   content: '';
   position: absolute;
   height: 0;

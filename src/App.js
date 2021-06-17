@@ -19,24 +19,31 @@ function App() {
         <CurrencyDropdownBtn inlineFlex />
       </div>
 
-      <div>
-        <PhotoshootCarousel />
-      </div>
+      <PhotoshootCarousel />
 
-      <div id='content'>
-        <aside className='arrow'>
-          {planeIcon} FREE SHIPPING
-        </aside>
-      </div>
+      <div style={
+        {
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }
+      }>
 
-      <div>
+        <div id='content'>
+          <aside className='arrow'>
+            {planeIcon} FREE SHIPPING
+          </aside>
+        </div>
+        
         <a href="#" className="aLink">
           <span className="myButton ribbon">
             {clockIcon}
             30-DAYS RETURNS
-            </span>
+          </span>
         </a>
       </div>
+
+
     </>
   );
 }
