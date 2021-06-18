@@ -1,7 +1,8 @@
 import './App.scss';
-import { checkIcon, clockIcon, facebookIcon, instagramIcon, pinterestIcon, twitterIcon, planeIcon } from './AwesomeIcons';
+import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './AwesomeIcons';
 import { PhotoshootCarousel } from './Carousel';
 import { CurrencyDropdownBtn } from './DropdownButton';
+import { RibbonArea } from './RibbonArea';
 import { TopNavBar } from './NavBar';
 import { QuickLinks } from './Nav';
 
@@ -21,32 +22,7 @@ function App() {
 
       <PhotoshootCarousel />
 
-      <div style={
-        {
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }
-      }>
-
-        <div className="right-arrow">
-          {planeIcon} FREE SHIPPING
-        </div>
-
-        <a href="#" className="aLink">
-          <span className="myButton ribbon">
-            {clockIcon}
-            30-DAYS RETURNS
-          </span>
-        </a>
-
-        <div className="left-arrow">
-          {checkIcon} 24/7 SUPPORT
-        </div>
-
-      </div>
-
-
+      <RibbonArea/>
     </>
   );
 }

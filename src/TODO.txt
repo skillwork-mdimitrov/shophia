@@ -14,4 +14,5 @@
 14. Get correct fonts from PS
 15. Ribbon in custom css .a color !important fix possibly
 16. Remove hard coded pixels from Ribbon
+17. Remove styled.components if not used
 
