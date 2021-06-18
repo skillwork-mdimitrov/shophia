@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { colours } from './commonColours';
 
 const StyledDiamond = styled.div`
   width: 0;
   height: 0;
   border: 50px solid transparent;
-  border-bottom-color: red;
+  border-bottom-color: ${colours.straw};
   position: relative;
   top: -50px;
 
@@ -16,7 +17,7 @@ const StyledDiamond = styled.div`
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-top-color: red;
+    border-top-color: ${colours.straw};
   }
 `;
 
