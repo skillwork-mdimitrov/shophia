@@ -1,5 +1,5 @@
 import './App.scss';
-import { clockIcon, facebookIcon, instagramIcon, pinterestIcon, twitterIcon, planeIcon } from './AwesomeIcons';
+import { checkIcon, clockIcon, facebookIcon, instagramIcon, pinterestIcon, twitterIcon, planeIcon } from './AwesomeIcons';
 import { PhotoshootCarousel } from './Carousel';
 import { CurrencyDropdownBtn } from './DropdownButton';
 import { TopNavBar } from './NavBar';
@@ -29,18 +29,21 @@ function App() {
         }
       }>
 
-        <div id='content'>
-          <aside className='arrow'>
-            {planeIcon} FREE SHIPPING
-          </aside>
+        <div className="right-arrow">
+          {planeIcon} FREE SHIPPING
         </div>
-        
+
         <a href="#" className="aLink">
           <span className="myButton ribbon">
             {clockIcon}
             30-DAYS RETURNS
           </span>
         </a>
+
+        <div className="left-arrow">
+          {checkIcon} 24/7 SUPPORT
+        </div>
+
       </div>
 
 
