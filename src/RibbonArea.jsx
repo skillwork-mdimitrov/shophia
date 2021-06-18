@@ -1,14 +1,14 @@
 import { checkIcon, clockIcon, planeIcon } from './AwesomeIcons';
+import styled from 'styled-components';
+
+const RibbonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const RibbonArea = () =>
-  <div style={
-    {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }>
-
+  <RibbonContainer>
     <div className="right-arrow">
       {planeIcon} FREE SHIPPING
     </div>
@@ -23,7 +23,6 @@ const RibbonArea = () =>
     <div className="left-arrow">
       {checkIcon} 24/7 SUPPORT
     </div>
-
-  </div>
+  </RibbonContainer>
 
 export { RibbonArea }
