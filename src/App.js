@@ -1,9 +1,11 @@
-import './App.scss';
+import './styles/App.scss';
 import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './AwesomeIcons';
 import { PhotoshootCarousel } from './Carousel';
 import { CurrencyDropdownBtn } from './DropdownButton';
 import { RibbonArea } from './RibbonArea';
-import styled from 'styled-components'
+import { StyledBrandName } from './styles/StyledBrandName';
+import { StyledDiamond } from './styles/StyledDiamond';
+import { StyledLinksContainer } from './styles/StyledLinksContainer';
 import { TopNavBar } from './NavBar';
 import { QuickLinks } from './Nav';
 
@@ -11,47 +13,16 @@ function App() {
   const subPageLinks = ['Home', 'Gallery', 'Categories', 'Pages'];
   const socialMediaLinks = [facebookIcon, twitterIcon, pinterestIcon, instagramIcon]
 
-  const LinksContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  `;
-
-  const HandPickedContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `;
-
-  const Diamond = styled.div`
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-bottom-color: red;
-    position: relative;
-    top: -50px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: -50px;
-      top: 50px;
-      width: 0;
-      height: 0;
-      border: 50px solid transparent;
-      border-top-color: red;
-    }
-  `;
-
   return (
     <>
       <TopNavBar />
-      <LinksContainer>
+
+      <StyledLinksContainer>
         <QuickLinks inlineFlex links={subPageLinks} />
-        <span className="brandFont">Shophia</span>
+        <StyledBrandName>Shophia</StyledBrandName>
         <QuickLinks inlineFlex links={socialMediaLinks} />
         <CurrencyDropdownBtn inlineFlex />
-      </LinksContainer>
+      </StyledLinksContainer>
 
       <PhotoshootCarousel />
 
@@ -59,14 +30,13 @@ function App() {
 
       <div className="container-fluid">
         <div className="row">
-          <hr className="col"/>
+          <hr className="col" />
           <div className="col">
-            <Diamond/>
+            <StyledDiamond />
           </div>
-          <hr className="col"/>
+          <hr className="col" />
         </div>
       </div>
-
     </>
   );
 }
