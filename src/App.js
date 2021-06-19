@@ -4,8 +4,8 @@ import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './Aweso
 import { PhotoshootCarousel } from './Carousel';
 import { CurrencyDropdownBtn } from './DropdownButton';
 import { RibbonArea } from './RibbonArea';
+import { SectionSeparator } from './styles/SectionSeparator';
 import { StyledBrandName } from './styles/StyledBrandName';
-import { StyledDiamond } from './styles/StyledDiamond';
 import { StyledLinksContainer } from './styles/StyledLinksContainer';
 import { TopNavBar } from './NavBar';
 import { QuickLinks } from './Nav';
@@ -32,19 +32,7 @@ function App() {
 
       <RibbonArea />
 
-      <div className="container-fluid" style={{ margin: "30px 0" }}>
-        <div className="row">
-          <hr className="col" />
-          <div className="col d-flex justify-content-around">
-            <StyledDiamond />
-
-            HandPicked
-
-            <StyledDiamond />
-          </div>
-          <hr className="col" />
-        </div>
-      </div>
+      <SectionSeparator text='HandPicked'/>
 
       <div className="container-fluid">
         <div className="row">
@@ -93,12 +81,12 @@ function App() {
                 width: '80%',
               }}></div>
               <em style={{
-                 left: '50%',
-                 position: 'absolute',
-                 top: '45%',
-                 transform: 'translate(-50%, -50%)',
-                 fontSize: '3em',
-              }}>50 % <br/>OFF</em>
+                left: '50%',
+                position: 'absolute',
+                top: '45%',
+                transform: 'translate(-50%, -50%)',
+                fontSize: '3em',
+              }}>50 % <br />OFF</em>
               <BlackBracelet />
             </div>
           </div>
