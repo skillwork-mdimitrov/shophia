@@ -11,6 +11,7 @@ import { TopNavBar } from './NavBar';
 import { QuickLinks } from './Nav';
 
 import { ReactComponent as BlackBoots } from './img/boots-black.svg';
+import { ReactComponent as BlackBracelet } from './img/bracelet-black.svg';
 
 function App() {
   const subPageLinks = ['Home', 'Gallery', 'Categories', 'Pages'];
@@ -48,7 +49,7 @@ function App() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-3">
-            <div className="mb-4" style={{
+            <div className="mb-4 d-flex justify-content-center" style={{
               backgroundColor: '#E8E8E8',
               position: 'relative'
             }}>
@@ -64,8 +65,9 @@ function App() {
               }}></div>
               <Button variant="warning" style={{
                 left: '50%',
-                top: '75w%',
-                transform: 'translate(-50%, -50%)',
+                position: 'absolute',
+                top: '75%',
+                transform: 'translate(-50%, -50%)'
               }}>SHOP NOW</Button>{' '}
               <BlackBoots />
             </div>
@@ -78,10 +80,26 @@ function App() {
             </div>
           </div>
           <div className="col-3">
-            <div className="mb-4" style={{
+            <div className="mb-4 d-flex justify-content-center" style={{
               backgroundColor: '#E8E8E8',
             }}>
-              <BlackBoots />
+              <div style={{
+                border: '3px solid white',
+                height: '80%',
+                left: '50%',
+                position: 'absolute',
+                top: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '80%',
+              }}></div>
+              <em style={{
+                 left: '50%',
+                 position: 'absolute',
+                 top: '45%',
+                 transform: 'translate(-50%, -50%)',
+                 fontSize: '3em',
+              }}>50 % <br/>OFF</em>
+              <BlackBracelet />
             </div>
           </div>
         </div>
