@@ -2,7 +2,6 @@ import { checkIcon, clockIcon, planeIcon } from './AwesomeIcons';
 import { colours } from './styles/commonColours';
 import styled from 'styled-components';
 
-
 const StyledRibbonContainer = styled.div`
   display: flex;
   justify-content: center;

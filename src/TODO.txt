@@ -7,12 +7,11 @@
 7. Rename Nav + NavBar
 8. Possibly rename DropdownButton
 9. Make DropdownButton at least change the currency value.
-10. Nav.jsx inline style move to StyledComponent
-11. DropdownButton inline style move to StyledComponent
-12. Remove all style={} that I find
+10. Nav.jsx inline style move to StyledComponent (DONE)
+11. DropdownButton inline style move to StyledComponent (DONE)
+12. Remove all style={} that I find (WORKING ON IT)
 13. Feed karosel new pics with the inverted triangle Photoshopped pics.
 14. Get correct fonts from PS
 15. Ribbon in custom css .a color !important fix possibly
-16. Remove hard coded pixels from Ribbon
-17. Remove styled.components if not used
+16. Remove hard coded pixels from Ribbon (NOT NEEDED)
 
