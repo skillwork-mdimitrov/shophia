@@ -8,6 +8,7 @@ import { RibbonArea } from './RibbonArea';
 import { SectionSeparator } from './SectionSeparator';
 import { StyledBrandName } from './styles/StyledBrandName';
 import { StyledLinksContainer } from './styles/StyledLinksContainer';
+import { SummerCollection } from './SummerCollection';
 import { TopNavBar } from './NavBar';
 import { QuickLinks } from './Nav';
 
@@ -35,6 +36,8 @@ function App() {
       <FeaturedSection />
 
       <SectionSeparator text='Summer Collection' />
+
+      <SummerCollection/>
     </>
   );
 }
