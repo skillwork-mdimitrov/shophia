@@ -21,7 +21,7 @@ const AbsoluteWhiteFrame = styled(AbsoluteCenteredDiv)`
 
 const LightGrayContainer = styled.div`
   background-color: ${colours.lightGray};
-  position: ${props => props.relative ? 'relative' : 'static'};
+  position: relative
 `;
 
 const SemiTransparentSquare = styled(AbsoluteCenteredDiv)`
@@ -35,7 +35,7 @@ const FeaturedSection = () =>
   <div className="container-fluid">
     <div className="row">
       <div className="col-3">
-        <LightGrayContainer relative className="mb-4 d-flex justify-content-center">
+        <LightGrayContainer className="mb-4 d-flex justify-content-center">
           <SemiTransparentSquare/>
           <Button variant="warning" style={{
             left: '50%',
