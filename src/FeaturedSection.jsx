@@ -4,6 +4,7 @@ import { ReactComponent as BlackBootsImg } from './img/boots-black.svg';
 import { ReactComponent as BlackBraceletImg } from './img/bracelet-black.svg';
 import { ReactComponent as BlackPouchImg } from './img/black-pouch.svg';
 import { ReactComponent as BraceletSilverImg } from './img/bracelet-silver.svg';
+import { ReactComponent as ParisHiltonCollectionImg } from './img/paris-hilton-collection.svg';
 import styled from 'styled-components';
 
 const AbsoluteCenteredDiv = styled.div`
@@ -15,8 +16,8 @@ const AbsoluteCenteredDiv = styled.div`
 
 const AbsoluteWhiteFrame = styled(AbsoluteCenteredDiv)`
   border: 3px solid white;
-  height: 80%;
-  width: 80%;
+  height: 85%;
+  width: 85%;
 `;
 
 const LightGrayContainer = styled.div`
@@ -32,11 +33,11 @@ const SemiTransparentSquare = styled(AbsoluteCenteredDiv)`
 `;
 
 const FeaturedSection = () =>
-  <div className="container-fluid">
+  <div className="container-fluid ml-2">
     <div className="row">
-      <div className="col-3">
-        <LightGrayContainer className="mb-4 d-flex justify-content-center">
-          <SemiTransparentSquare/>
+      <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
+          <SemiTransparentSquare />
           <Button variant="warning" style={{
             left: '50%',
             position: 'absolute',
@@ -45,14 +46,22 @@ const FeaturedSection = () =>
           }}>SHOP NOW</Button>{' '}
           <BlackBootsImg />
         </LightGrayContainer>
-      </div>
-      <div className="col-6">
-        <LightGrayContainer className="mb-4">
-          <BlackBootsImg />
+
+        <LightGrayContainer className='d-flex justify-content-center rounded'>
+          <AbsoluteWhiteFrame />
+          <BraceletSilverImg />
         </LightGrayContainer>
       </div>
-      <div className="col-3">
-        <LightGrayContainer className="mb-4 d-flex justify-content-center">
+
+      <div className="col-lg-4 mb-4 mb-lg-0">
+        <LightGrayContainer className="d-flex justify-content-end mb-4 rounded">
+          <AbsoluteWhiteFrame />
+          <ParisHiltonCollectionImg />
+        </LightGrayContainer>
+      </div>
+
+      <div className="col-lg-4 mb-4 mb-lg-0">
+        <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
           <AbsoluteWhiteFrame />
           <em style={{
             left: '50%',
@@ -63,23 +72,8 @@ const FeaturedSection = () =>
           }}>50 % <br />OFF</em>
           <BlackBraceletImg />
         </LightGrayContainer>
-      </div>
-    </div>
 
-    <div className="row">
-      <div className="col-3">
-        <LightGrayContainer className='d-flex justify-content-center'>
-          <AbsoluteWhiteFrame />
-          <BraceletSilverImg />
-        </LightGrayContainer>
-      </div>
-      <div className="col-6">
-        <LightGrayContainer>
-          <BlackBootsImg />
-        </LightGrayContainer>
-      </div>
-      <div className="col-3">
-        <LightGrayContainer className='d-flex justify-content-center'>
+        <LightGrayContainer className='d-flex justify-content-center rounded'>
           <AbsoluteWhiteFrame />
           <BlackPouchImg />
         </LightGrayContainer>

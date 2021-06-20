@@ -30,9 +30,11 @@ function App() {
 
       <RibbonArea />
 
-      <SectionSeparator text='HandPicked'/>
+      <SectionSeparator text='HandPicked' />
 
-      <FeaturedSection/>
+      <FeaturedSection />
+
+      <SectionSeparator text='Summer Collection' />
     </>
   );
 }
