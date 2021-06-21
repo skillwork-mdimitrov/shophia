@@ -53,14 +53,14 @@ const FeaturedSection = () =>
         </LightGrayContainer>
       </div>
 
-      <div className="col-lg-4 mb-4 mb-lg-0">
+      <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <LightGrayContainer className="d-flex justify-content-end mb-4 rounded">
           <AbsoluteWhiteFrame />
           <ParisHiltonCollectionImg />
         </LightGrayContainer>
       </div>
 
-      <div className="col-lg-4 mb-4 mb-lg-0">
+      <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
           <AbsoluteWhiteFrame />
           <em style={{

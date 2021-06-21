@@ -1,5 +1,6 @@
 import './styles/App.scss';
 
+import { BrandSection } from './BrandSection';
 import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './AwesomeIcons';
 import { CurrencyDropdownBtn } from './DropdownButton';
 import { FeaturedSection } from './FeaturedSection';
@@ -37,7 +38,12 @@ function App() {
 
       <SectionSeparator text='Summer Collection' />
 
-      <SummerCollection/>
+      <SummerCollection />
+
+      <SectionSeparator text='Our Brand' />
+
+      <BrandSection />
+
     </>
   );
 }
