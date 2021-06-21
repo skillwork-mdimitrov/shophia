@@ -14,4 +14,6 @@
 14. Get correct fonts from PS
 15. Ribbon in custom css .a color !important fix possibly
 16. Remove hard coded pixels from Ribbon (NOT NEEDED)
+17. Rename to StyledName for styled stuff.
+18. Fix the Playfair Display font
 
