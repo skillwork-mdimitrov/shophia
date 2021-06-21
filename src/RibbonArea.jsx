@@ -38,7 +38,7 @@ const RibbonArea = () =>
       {planeIcon} FREE SHIPPING
     </StyledArrow>
 
-    <a href="#" className="aLink">
+    <a href="#placeholder" className="aLink">
       <span className="myButton ribbon">
         {clockIcon}
         30-DAYS RETURNS

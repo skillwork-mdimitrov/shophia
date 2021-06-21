@@ -22,9 +22,9 @@ function App() {
       <TopNavBar />
 
       <StyledLinksContainer>
-        <QuickLinks inlineFlex links={subPageLinks} />
+        <QuickLinks links={subPageLinks} />
         <StyledBrandName>Shophia</StyledBrandName>
-        <QuickLinks inlineFlex links={socialMediaLinks} />
+        <QuickLinks links={socialMediaLinks} />
         <CurrencyDropdownBtn inlineFlex />
       </StyledLinksContainer>
 

@@ -7,7 +7,8 @@ const SectionSeparator = ({ text }) =>
       <div className="col d-flex justify-content-around">
         <StyledDiamond />
         <p style={{
-          fontFamily: 'Playfair Display',
+          fontFamily: 'Playfair Display, serif',
+          fontSize: '1.5em'
         }}>{text}</p>
         <StyledDiamond />
       </div>
