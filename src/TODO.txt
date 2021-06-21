@@ -1,8 +1,7 @@
 1. Lower case + CSS text-transform in NavBar and USD BGN
-2. @import "../node_modules/bootstrap-scss/" in custom.scss make local imports
-3. See if NavBar having <div></div> wrapper is an issue
+3. (NOT) See if NavBar having <div></div> wrapper is an issue
 4. Naming convention for MyNav + MyNavBar, etc.
-5. Check if the font CDN is enough by itself.
+5. (YES) Check if the font CDN is enough by itself.
 6. Optimize the className and or seperate scss file. (<h1 className="brandFont">Shophia</h1>) + span not semantic
 7. Rename Nav + NavBar
 8. Possibly rename DropdownButton
