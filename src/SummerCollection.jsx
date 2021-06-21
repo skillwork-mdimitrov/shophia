@@ -38,6 +38,37 @@ const StyledAbsTrapezoid = styled(StyledTrapezoidShape)`
   transform: translate(-50%);
 `;
 
+const StyledResCircle = styled.div`
+  width: 15%;
+  border-radius: 50%;
+
+  background: #F0975D;
+
+  position: absolute;
+
+  left: 5%;
+  top: 5%;
+
+  line-height: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+`;
+
+const StyledCircleText = styled.div`
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  color: white;
+`;
+
 const SummerCollection = () =>
   <>
     <div className="container-fluid">
@@ -45,28 +76,34 @@ const SummerCollection = () =>
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
           <StyledGrayContainer className="d-flex justify-content-center rounded">
             <MaleModel1 />
-            <StyledAbsTrapezoid/>
+            <StyledAbsTrapezoid />
+            <StyledResCircle>
+              <StyledCircleText>20%</StyledCircleText>
+            </StyledResCircle>
           </StyledGrayContainer>
         </div>
 
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
           <StyledGrayContainer className="d-flex justify-content-center rounded">
             <FemaleModel1 />
-            <StyledAbsTrapezoid/>
+            <StyledAbsTrapezoid />
           </StyledGrayContainer>
         </div>
 
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
           <StyledGrayContainer className="d-flex justify-content-center rounded">
             <FemaleModel2 />
-            <StyledAbsTrapezoid/>
+            <StyledAbsTrapezoid />
           </StyledGrayContainer>
         </div>
 
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
           <StyledGrayContainer className="d-flex justify-content-center rounded">
             <MaleModel2 />
-            <StyledAbsTrapezoid/>
+            <StyledAbsTrapezoid />
+            <StyledResCircle>
+              <StyledCircleText>40%</StyledCircleText>
+            </StyledResCircle>
           </StyledGrayContainer>
         </div>
       </div>
