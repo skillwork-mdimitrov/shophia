@@ -1,4 +1,4 @@
-1. Lower case + CSS text-transform in NavBar and USD BGN
+1. (SEMI-DONE) Lower case + CSS text-transform in NavBar and USD BGN
 3. (NOT) See if NavBar having <div></div> wrapper is an issue
 4. Naming convention for MyNav + MyNavBar, etc.
 5. (YES) Check if the font CDN is enough by itself.
