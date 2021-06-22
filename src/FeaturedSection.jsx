@@ -33,7 +33,7 @@ const SemiTransparentSquare = styled(AbsoluteCenteredDiv)`
 `;
 
 const FeaturedSection = () =>
-  <div className="container-fluid ml-2">
+  <div className="container-fluid">
     <div className="row">
       <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">

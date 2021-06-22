@@ -1,4 +1,15 @@
 import Nav from 'react-bootstrap/Nav';
+import styled from 'styled-components';
+
+const StyledNav = styled(Nav)`
+  font-family: Playfair Display, serif;
+  margin-left: 20px;
+  margin-right: 20px;
+`;
+
+const StyledNavLink = styled(Nav.Link)`
+  color: inherit;
+`;
 
 const QuickLinks = ({ links }) => {
 
@@ -8,16 +19,16 @@ const QuickLinks = ({ links }) => {
     
     return (
       <Nav.Item key={key}>
-        <Nav.Link eventKey={key}>{link}</Nav.Link>
+        <StyledNavLink eventKey={key}>{link}</StyledNavLink>
       </Nav.Item>
     )
   })
 
 
   return (
-    <Nav>
+    <StyledNav>
       {navLinks}
-    </Nav>
+    </StyledNav>
   )
 }
 

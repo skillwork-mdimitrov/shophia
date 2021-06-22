@@ -23,11 +23,13 @@ function App() {
     <>
       <TopNavBar />
 
-      <StyledLinksContainer>
+      <StyledLinksContainer className="ml-4 mr-4">
         <QuickLinks links={subPageLinks} />
         <StyledBrandName>Shophia</StyledBrandName>
-        <QuickLinks links={socialMediaLinks} />
-        <CurrencyDropdownBtn inlineFlex />
+        <div className="d-flex">
+          <QuickLinks links={socialMediaLinks} />
+          <CurrencyDropdownBtn />
+        </div>
       </StyledLinksContainer>
 
       <PhotoshootCarousel />
@@ -48,9 +50,9 @@ function App() {
 
       <SectionSeparator text='Customers Says' />
 
-      <Testemonials/>
+      <Testemonials />
 
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -8,12 +8,12 @@ const TopNavBar = () => {
 
   return (
     <Navbar bg="light" expand="lg">
-      <div>
+      <div className="ml-4">
         {phoneIcon}
-        <Navbar.Brand href="#home">Call {phoneNum}</Navbar.Brand>
+        <Navbar.Brand className="ml-4" href="#call-skype">Call {phoneNum}</Navbar.Brand>
       </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+      <Navbar.Collapse className="justify-content-end mr-4" id="basic-navbar-nav">
         <Navbar.Text className="text-uppercase">
           Welcome {userName}!
         </Navbar.Text>
