@@ -16,4 +16,5 @@
 17. Rename to StyledName for styled stuff.
 18. Fix the Playfair Display font (DONE)
 19. Do some <section> instead of <div>
+20. Reuse the triangle neck
 

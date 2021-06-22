@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const StyledNav = styled(Nav)`
   font-family: Playfair Display, serif;
-  margin-left: 20px;
   margin-right: 20px;
 `;
 

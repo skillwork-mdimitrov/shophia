@@ -1,8 +1,6 @@
-$hover-color: #cfb4f7;
 $ribbon-size: 1.5em;
 
-.aLink {
-  text-decoration:none;
+.ribbonContainer {
   color:white;
   overflow:hidden;
   display:block;
@@ -22,11 +20,6 @@ $ribbon-size: 1.5em;
   -ms-transition: border-color 500ms ease, color 250ms ease;;
   -o-transition: border-color 500ms ease, color 250ms ease;;
   transition: border-color 500ms ease, color 250ms ease;;
-}
-
-.myButton:hover {
-  color:$hover-color;
-  border-color:$hover-color;
 }
 
 // Inversed trinagles on the sides
