@@ -10,6 +10,7 @@ import { SectionSeparator } from './SectionSeparator';
 import { StyledBrandName } from './styles/StyledBrandName';
 import { StyledLinksContainer } from './styles/StyledLinksContainer';
 import { SummerCollection } from './SummerCollection';
+import { Testemonials } from './Testemonials';
 import { TopNavBar } from './NavBar';
 import { QuickLinks } from './Nav';
 
@@ -44,6 +45,9 @@ function App() {
 
       <BrandSection />
 
+      <SectionSeparator text='Customers Says' />
+
+      <Testemonials/>
     </>
   );
 }

@@ -27,7 +27,8 @@ const StyledTrapezoidShape = styled.div`
   }
 
   &:hover {
-    cursor: pointer
+    cursor: pointer;
+    border-bottom: 40px solid #F0975D;
   }
 `;
 
