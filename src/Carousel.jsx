@@ -5,16 +5,7 @@ import { ReactComponent as Model1Photoshoot } from './img/carousel-models/model-
 import { ReactComponent as Model2Photoshoot } from './img/carousel-models/model-2.svg';
 import { ReactComponent as Model3Photoshoot } from './img/carousel-models/model-3.svg';
 import { ReactComponent as MidSeasonSale } from './img/mid-season-sale.svg';
-import { StyledAbsCenteredYDiv } from './styles/StyledAbsCenteredDiv';
-
-const StyledAbsTriangleNeck = styled(StyledAbsCenteredYDiv)`
-  width: 0;
-  height: 0;
-  top: 0;
-  border-left: 200px solid transparent;
-  border-right: 200px solid transparent;
-  border-top: 30px solid white;
-`;
+import { StyledAbsTriangleNeck } from './styles/StyledAbsTriangleNeck';
 
 const StyledCarouselCaption = styled(Carousel.Caption)`
   top: 15%;
@@ -26,6 +17,7 @@ const StyledRelativeDiv = styled.div`
 
 const PhotoshootCarousel = () =>
   <StyledRelativeDiv>
+    <StyledAbsTriangleNeck borderTop={60}/>
     <Carousel>
       <Carousel.Item>
         <Model3Photoshoot alt="First slide" />
@@ -46,7 +38,6 @@ const PhotoshootCarousel = () =>
         </StyledCarouselCaption>
       </Carousel.Item>
     </Carousel>
-    <StyledAbsTriangleNeck />
   </StyledRelativeDiv>
 
 export { PhotoshootCarousel }

@@ -3,15 +3,7 @@ import styled from 'styled-components';
 import { colours } from './styles/commonColours';
 import { ReactComponent as ReviewFemaleImg } from './img/sandra-dewi-review.svg';
 import { ReactComponent as ReviewMaleImg } from './img/shaheer-sheikh-review.svg';
-import { StyledAbsCenteredYDiv } from './styles/StyledAbsCenteredDiv';
-
-const StyledAbsTriangleNeck = styled(StyledAbsCenteredYDiv)`
-  width: 0;
-  height: 0;
-  border-left: 200px solid transparent;
-  border-right: 200px solid transparent;
-  border-top: 30px solid white;
-`;
+import { StyledAbsTriangleNeck } from './styles/StyledAbsTriangleNeck';
 
 const Testemonials = () =>
   <div className="container-fluid" style={{
@@ -40,8 +32,6 @@ const Testemonials = () =>
 
       </div>
       <div className="col-lg-6 d-flex align-items-center">
-        <ReviewMaleImg />
-
         <div>
           <p>
             Sed ut perspiciatis
@@ -54,6 +44,8 @@ const Testemonials = () =>
             DESIGNER
           </em>
         </div>
+
+        <ReviewMaleImg />
 
       </div>
     </div>

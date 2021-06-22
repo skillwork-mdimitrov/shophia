@@ -109,6 +109,6 @@ const SummerCollection = () =>
         </div>
       </div>
     </div>
-  </>
+  </>;
 
 export { SummerCollection }

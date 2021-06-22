@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-const StyledAbsCenteredYDiv = styled.div`
+const StyledAbsXCenteredDiv = styled.div`
   position: absolute;  
   left: 50%;
+  top: 0;
   transform: translate(-50%);
 `;
 
@@ -13,5 +14,5 @@ const StyledAbsCenteredXYDiv = styled.div`
   transform: translate(-50%, -50%);
 `;
 
-export { StyledAbsCenteredXYDiv, StyledAbsCenteredYDiv }
+export { StyledAbsXCenteredDiv, StyledAbsCenteredXYDiv }
 

@@ -25,7 +25,7 @@ function App() {
 
       <StyledLinksContainer className="ml-4 mr-4">
         <QuickLinks links={subPageLinks} />
-        <StyledBrandName>Shophia</StyledBrandName>
+        <StyledBrandName className="pr-5">Shophia</StyledBrandName>
         <div className="d-flex">
           <QuickLinks links={socialMediaLinks} />
           <CurrencyDropdownBtn />
