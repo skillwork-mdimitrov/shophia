@@ -4,6 +4,7 @@ import { BrandSection } from './BrandSection';
 import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './AwesomeIcons';
 import { CurrencyDropdownBtn } from './DropdownButton';
 import { FeaturedSection } from './FeaturedSection';
+import { Footer } from './Footer';
 import { PhotoshootCarousel } from './Carousel';
 import { RibbonArea } from './RibbonArea';
 import { SectionSeparator } from './SectionSeparator';
@@ -48,6 +49,8 @@ function App() {
       <SectionSeparator text='Customers Says' />
 
       <Testemonials/>
+
+      <Footer/>
     </>
   );
 }

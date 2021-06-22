@@ -33,20 +33,20 @@ const StyledArrow = styled.div`
 `;
 
 const RibbonArea = () =>
-  <StyledRibbonContainer>
+  <StyledRibbonContainer className="text-uppercase">
     <StyledArrow pointingRight>
-      {planeIcon} FREE SHIPPING
+      {planeIcon} Free shipping
     </StyledArrow>
 
     <a href="#placeholder" className="aLink">
       <span className="myButton ribbon">
         {clockIcon}
-        30-DAYS RETURNS
+        30-days returns
       </span>
     </a>
 
     <StyledArrow pointingLeft>
-      {checkIcon} 24/7 SUPPORT
+      {checkIcon} 24/7 support
     </StyledArrow>
   </StyledRibbonContainer>
 

@@ -14,13 +14,13 @@ const TopNavBar = () => {
       </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-        <Navbar.Text>
-          WELCOME {userName}!
+        <Navbar.Text className="text-uppercase">
+          Welcome {userName}!
         </Navbar.Text>
-        <Nav>
-          <Nav.Link href="#account">MY ACCOUNT</Nav.Link>
-          <Nav.Link href="#wishlist">MY WISHLIST</Nav.Link>
-          <Nav.Link href="#login">LOGIN</Nav.Link>
+        <Nav className="text-uppercase">
+          <Nav.Link href="#account">My account</Nav.Link>
+          <Nav.Link href="#wishlist">My wishlist</Nav.Link>
+          <Nav.Link href="#login">Login</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

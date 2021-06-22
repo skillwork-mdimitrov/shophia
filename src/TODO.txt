@@ -14,5 +14,6 @@
 15. Ribbon in custom css .a color !important fix possibly
 16. Remove hard coded pixels from Ribbon (NOT NEEDED)
 17. Rename to StyledName for styled stuff.
-18. Fix the Playfair Display font
+18. Fix the Playfair Display font (DONE)
+19. Do some <section> instead of <div>
 

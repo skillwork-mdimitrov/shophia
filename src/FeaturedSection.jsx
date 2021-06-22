@@ -38,12 +38,12 @@ const FeaturedSection = () =>
       <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
           <SemiTransparentSquare />
-          <Button variant="warning" style={{
+          <Button className="text-uppercase" variant="warning" style={{
             left: '50%',
             position: 'absolute',
             top: '75%',
             transform: 'translate(-50%, -50%)'
-          }}>SHOP NOW</Button>{' '}
+          }}>Shop now</Button>{' '}
           <BlackBootsImg />
         </LightGrayContainer>
 
@@ -69,7 +69,8 @@ const FeaturedSection = () =>
             top: '45%',
             transform: 'translate(-50%, -50%)',
             fontSize: '3em',
-          }}>50 % <br />OFF</em>
+            textTransform: 'uppercase'
+          }}>50 % <br />off</em>
           <BlackBraceletImg />
         </LightGrayContainer>
 
