@@ -15,28 +15,21 @@ const StyledRelativeDiv = styled.div`
   position: relative;
 `
 
+const carouselItemFactory = (modelPic) =>
+  <Carousel.Item>
+    {modelPic}
+    <StyledCarouselCaption>
+      <MidSeasonSale />
+    </StyledCarouselCaption>
+  </Carousel.Item>
+
 const PhotoshootCarousel = () =>
   <StyledRelativeDiv>
-    <StyledAbsTriangleNeck borderTop={60}/>
+    <StyledAbsTriangleNeck borderTop={60} />
     <Carousel>
-      <Carousel.Item>
-        <Model3Photoshoot alt="First slide" />
-        <StyledCarouselCaption>
-          <MidSeasonSale />
-        </StyledCarouselCaption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Model2Photoshoot alt="Second slide" />
-        <StyledCarouselCaption>
-          <MidSeasonSale />
-        </StyledCarouselCaption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Model1Photoshoot alt="Third slide" />
-        <StyledCarouselCaption>
-          <MidSeasonSale />
-        </StyledCarouselCaption>
-      </Carousel.Item>
+      {carouselItemFactory(<Model3Photoshoot/>)}
+      {carouselItemFactory(<Model2Photoshoot/>)}
+      {carouselItemFactory(<Model1Photoshoot/>)}
     </Carousel>
   </StyledRelativeDiv>
 
