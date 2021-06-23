@@ -9,38 +9,41 @@ const Testemonials = () =>
     position: 'relative'
   }}>
 
-    <StyledAbsTriangleNeck/>
+    <StyledAbsTriangleNeck />
 
     <div className="row pt-4 pb-4">
       <div className="col-lg-6 d-flex align-items-center">
         <ReviewFemaleImg />
 
         <div>
-          <p>
+          <p className="text-white" style={{ width: '50%' }}>
             Sed ut perspiciatis
             unde omnis iste natus error sit
             voluptatem accusantium doloremque
           </p>
 
-          <em className="mt-4">
-            Sandra Dewi<br />
-            FASHION STYLISH
+          <em className="mt-4" style={{ fontFamily: 'Playfair Display, serif', fontSize: '2em' }}>
+            Sandra Dewi
           </em>
+          <p>FASHION STYLISH</p>
         </div>
 
       </div>
       <div className="col-lg-6 d-flex align-items-center">
         <div>
-          <p>
-            Sed ut perspiciatis
-            unde omnis iste natus error sit
-            voluptatem accusantium doloremque
-          </p>
 
-          <em className="mt-4">
-            Shaheer Sheikh<br />
-            DESIGNER
-          </em>
+          <div style={{ display: 'flex', alignItems: 'flex-end', flexDirection: 'column' }}>
+            <p className="text-white" style={{ width: '50%', display: 'inline-flex', textAlign: 'end' }}>
+              Sed ut perspiciatis
+              unde omnis iste natus error sit
+              voluptatem accusantium doloremque
+            </p>
+
+            <em className="mt-4" style={{ display: 'inline-flex', fontFamily: 'Playfair Display, serif', fontSize: '2em' }}>
+              Shaheer Sheikh
+            </em>
+            <p>DESIGNER</p>
+          </div>
         </div>
 
         <ReviewMaleImg />
