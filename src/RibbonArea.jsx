@@ -9,44 +9,59 @@ const StyledRibbonContainer = styled.div`
 `;
 
 const StyledArrow = styled.div`
-  display: inline-block;
-  height: 60px;
-  color: #FFFFFF;
-  font-size: 22px;
-  line-height: 38px;
-  margin: 19px;
-  position: relative;
-  width: 200px;
   background-color: ${colours.straw};
-
+  color: #FFFFFF;  
+  display: flex;
+  font-size: 22px;
+  height: 90px;
+  line-height: 58px;
+  margin: 28px;
+  position: relative;
+  width: 550px;
+  align-items: center;
+  
   &::after {
     border-color: transparent ${colours.straw};
     border-style: solid;
-    border-width: ${props => props.pointingLeft ? "31px 25px 29px 0" : "31px 0px 29px 25px"};
+    border-width: ${props => props.pointingLeft ? "45px 40px 45px 0" : "45px 0px 45px 40px"};
     content: "";
     height: 0;
-    left: ${props => props.pointingLeft ? "-25px" : "auto"};
+    left: ${props => props.pointingLeft ? "-40px" : "auto"};
     position: absolute;
-    right: ${props => props.pointingRight ? "-25px" : "auto"};
+    right: ${props => props.pointingRight ? "-40px" : "auto"};
     width: 0;
   }
 `;
 
+const StyledIconContainer = styled.div`
+  align-items: center;
+  display: flex;
+  margin-left: 1.2em;
+  margin-right: .6em;
+  ${props => props.rotate && 'transform: rotate(-45deg);'}
+`; 
+
 const RibbonArea = () =>
   <StyledRibbonContainer className="text-uppercase">
     <StyledArrow pointingRight>
-      {planeIcon} Free shipping
+      <StyledIconContainer rotate>
+        {planeIcon}
+      </StyledIconContainer>
+      <span title="In Order Min $200">Free shipping</span>
     </StyledArrow>
 
     <span href="#placeholder" className="ribbonContainer">
       <span className="myButton ribbon">
         {clockIcon}
-        30-days returns
+        <span title="Money Back Guarantee">30-days returns</span>
       </span>
     </span>
 
     <StyledArrow pointingLeft>
-      {checkIcon} 24/7 support
+      <StyledIconContainer>
+        {checkIcon}
+      </StyledIconContainer>
+      <span title="Lifetime support">24/7 support</span>
     </StyledArrow>
   </StyledRibbonContainer>
 

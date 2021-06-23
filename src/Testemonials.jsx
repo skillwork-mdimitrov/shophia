@@ -1,5 +1,3 @@
-import styled from 'styled-components';
-
 import { colours } from './styles/commonColours';
 import { ReactComponent as ReviewFemaleImg } from './img/sandra-dewi-review.svg';
 import { ReactComponent as ReviewMaleImg } from './img/shaheer-sheikh-review.svg';

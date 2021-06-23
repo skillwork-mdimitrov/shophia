@@ -1,9 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
 import styled from 'styled-components';
 
-import { ReactComponent as Model1Photoshoot } from './img/carousel-models/model-1.svg';
-import { ReactComponent as Model2Photoshoot } from './img/carousel-models/model-2.svg';
-import { ReactComponent as Model3Photoshoot } from './img/carousel-models/model-3.svg';
+import { ReactComponent as Model1Photoshoot } from './img/CarouselModels/model-1.svg';
+import { ReactComponent as Model2Photoshoot } from './img/CarouselModels/model-2.svg';
+import { ReactComponent as Model3Photoshoot } from './img/CarouselModels/model-3.svg';
 import { ReactComponent as MidSeasonSale } from './img/mid-season-sale.svg';
 import { StyledAbsTriangleNeck } from './styles/StyledAbsTriangleNeck';
 
