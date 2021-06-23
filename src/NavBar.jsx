@@ -1,6 +1,25 @@
+import styled from 'styled-components';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { phoneIcon } from './AwesomeIcons';
+
+const StyledNavBarText = styled(Navbar.Text)`
+  &::after {
+    content: '';
+    border-left: 1px solid black;
+    margin-left: 1em;
+    margin-right: .5em;
+  }
+`;
+
+const StyledNavLink = styled(Nav.Link)`
+  &::after {
+    content: '';
+    border-left: 1px solid black;
+    margin-left: 1em;
+  }
+`;
 
 const TopNavBar = () => {
   const phoneNum = "+001 555 801";
@@ -14,13 +33,13 @@ const TopNavBar = () => {
       </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="justify-content-end mr-4" id="basic-navbar-nav">
-        <Navbar.Text className="text-uppercase">
+        <StyledNavBarText className="text-uppercase">
           Welcome {userName}!
-        </Navbar.Text>
+        </StyledNavBarText>
         <Nav className="text-uppercase">
-          <Nav.Link href="#account">My account</Nav.Link>
-          <Nav.Link href="#wishlist">My wishlist</Nav.Link>
-          <Nav.Link href="#login">Login</Nav.Link>
+          <StyledNavLink href="#account">My account</StyledNavLink>
+          <StyledNavLink href="#wishlist">My wishlist</StyledNavLink>
+          <StyledNavLink href="#login">Login</StyledNavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
