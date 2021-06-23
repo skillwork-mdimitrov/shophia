@@ -1,4 +1,14 @@
 @import './ribbon.scss';
 
+@media (min-width: 1200px) and (max-width: 1600px) { 
+  .ribbon {
+    font-size: 1.5em;
+  }
+
+  .ribbon:after {
+    right: 8.5em;
+  }
+}
+
 // can extend bootstrap here
 @import "/node_modules/bootstrap-scss/";

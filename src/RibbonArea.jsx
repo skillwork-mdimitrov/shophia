@@ -31,6 +31,23 @@ const StyledArrow = styled.div`
     position: absolute;
     right: ${props => props.pointingRight ? "-40px" : "auto"};
     width: 0;
+
+    @media (min-width: 1200px) and (max-width: 1600px) { 
+      height: 70px;
+      border-width: ${props => props.pointingLeft ? "36px 40px 36px 0" : "36px 0px 36px 40px"};
+    }
+
+    @media (max-width: 1199px) { 
+      display: none
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1600px) { 
+    height: 70px;
+  }
+
+  @media (max-width: 1199px) { 
+    display: none
   }
 `;
 
