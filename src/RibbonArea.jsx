@@ -44,7 +44,7 @@ const StyledIconContainer = styled.div`
 const RibbonArea = () =>
   <StyledRibbonContainer className="text-uppercase">
     <StyledArrow pointingRight>
-      <StyledIconContainer rotate>
+      <StyledIconContainer rotate={'true'}>
         {planeIcon}
       </StyledIconContainer>
       <span title="In Order Min $200">Free shipping</span>

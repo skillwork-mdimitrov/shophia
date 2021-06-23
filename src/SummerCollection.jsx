@@ -42,14 +42,10 @@ const StyledAbsTrapezoid = styled(StyledTrapezoidShape)`
 const StyledResCircle = styled.div`
   width: 15%;
   border-radius: 50%;
-
   background: #F0975D;
-
   position: absolute;
-
   left: 5%;
   top: 5%;
-
   line-height: 0;
 
   &::after {
@@ -70,43 +66,33 @@ const StyledCircleText = styled.div`
   color: white;
 `;
 
+const modelCard = (pic) =>
+  <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+    <StyledGrayContainer className="d-flex justify-content-center rounded">
+      {pic}
+      <StyledAbsTrapezoid />
+    </StyledGrayContainer>
+  </div >
+
+const modelCardDiscounted = (pic, discount) =>
+  <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+    <StyledGrayContainer className="d-flex justify-content-center rounded">
+      {pic}
+      <StyledAbsTrapezoid />
+      <StyledResCircle>
+        <StyledCircleText>{discount}%</StyledCircleText>
+      </StyledResCircle>
+    </StyledGrayContainer>
+  </div>
+
 const SummerCollection = () =>
   <>
     <div className="container-fluid">
       <div className="row">
-        <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
-          <StyledGrayContainer className="d-flex justify-content-center rounded">
-            <MaleModel1 />
-            <StyledAbsTrapezoid />
-            <StyledResCircle>
-              <StyledCircleText>20%</StyledCircleText>
-            </StyledResCircle>
-          </StyledGrayContainer>
-        </div>
-
-        <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
-          <StyledGrayContainer className="d-flex justify-content-center rounded">
-            <FemaleModel1 />
-            <StyledAbsTrapezoid />
-          </StyledGrayContainer>
-        </div>
-
-        <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
-          <StyledGrayContainer className="d-flex justify-content-center rounded">
-            <FemaleModel2 />
-            <StyledAbsTrapezoid />
-          </StyledGrayContainer>
-        </div>
-
-        <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
-          <StyledGrayContainer className="d-flex justify-content-center rounded">
-            <MaleModel2 />
-            <StyledAbsTrapezoid />
-            <StyledResCircle>
-              <StyledCircleText>40%</StyledCircleText>
-            </StyledResCircle>
-          </StyledGrayContainer>
-        </div>
+        {modelCardDiscounted(<MaleModel1/>, 20)}
+        {modelCard(<FemaleModel1 />)}
+        {modelCard(<FemaleModel2 />)}
+        {modelCardDiscounted(<MaleModel2/>, 40)}
       </div>
     </div>
   </>;
