@@ -1,6 +1,9 @@
 import { colours } from './styles/commonColours';
 import { ReactComponent as FemaleModel1 } from './img/SummerCollection/female-1.svg';
 import { ReactComponent as FemaleModel2 } from './img/SummerCollection/female-2.svg';
+import { ReactComponent as FemaleModel3 } from './img/SummerCollection/female-3.svg';
+import { ReactComponent as FemaleModel4 } from './img/SummerCollection/female-4.svg';
+import { ReactComponent as FemaleModel5 } from './img/SummerCollection/female-5.svg';
 import { ReactComponent as MaleModel1 } from './img/SummerCollection/male-1.svg';
 import { ReactComponent as MaleModel2 } from './img/SummerCollection/male-2.svg';
 import { ReactComponent as MaleModel3 } from './img/SummerCollection/male-3.svg';
@@ -67,7 +70,7 @@ const StyledCircleText = styled.div`
 `;
 
 const modelCard = (pic) =>
-  <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+  <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
     <StyledGrayContainer className="d-flex justify-content-center rounded">
       {pic}
       <StyledAbsTrapezoid />
@@ -75,7 +78,7 @@ const modelCard = (pic) =>
   </div >
 
 const modelCardDiscounted = (pic, discount) =>
-  <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+  <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
     <StyledGrayContainer className="d-flex justify-content-center rounded">
       {pic}
       <StyledAbsTrapezoid />
@@ -93,6 +96,10 @@ const SummerCollection = () =>
         {modelCard(<FemaleModel1 />)}
         {modelCard(<FemaleModel2 />)}
         {modelCardDiscounted(<MaleModel2/>, 40)}
+        {modelCardDiscounted(<FemaleModel3/>, 20)}
+        {modelCard(<FemaleModel4 />)}
+        {modelCard(<FemaleModel5 />)}
+        {modelCardDiscounted(<MaleModel3/>, 40)}
       </div>
     </div>
   </>;
