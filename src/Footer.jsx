@@ -133,9 +133,6 @@ const Footer = () =>
               </section>
             </div>
           </div>
-
-
-
         </section>
       </div>
     </footer>

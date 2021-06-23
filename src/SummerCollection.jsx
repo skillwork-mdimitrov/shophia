@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 import { colours } from './styles/commonColours';
 import { ReactComponent as FemaleModel1 } from './img/SummerCollection/female-1.svg';
 import { ReactComponent as FemaleModel2 } from './img/SummerCollection/female-2.svg';
@@ -7,7 +9,6 @@ import { ReactComponent as FemaleModel5 } from './img/SummerCollection/female-5.
 import { ReactComponent as MaleModel1 } from './img/SummerCollection/male-1.svg';
 import { ReactComponent as MaleModel2 } from './img/SummerCollection/male-2.svg';
 import { ReactComponent as MaleModel3 } from './img/SummerCollection/male-3.svg';
-import styled from 'styled-components';
 
 const StyledGrayContainer = styled.div`
   background-color: ${colours.lightGray};

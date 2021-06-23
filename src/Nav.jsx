@@ -23,13 +23,11 @@ const QuickLinks = ({ links }) => {
     )
   })
 
-
   return (
     <StyledNav>
       {navLinks}
     </StyledNav>
   )
 }
-
 
 export { QuickLinks }

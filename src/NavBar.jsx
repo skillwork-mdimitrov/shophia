@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+
 import { phoneIcon } from './AwesomeIcons';
 
 const StyledNavBarText = styled(Navbar.Text)`
