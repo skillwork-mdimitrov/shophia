@@ -64,7 +64,8 @@ const HandPicked = () =>
             top: '45%',
             transform: 'translate(-50%, -50%)',
             fontSize: '3em',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            lineHeight: '1em'
           }}>50 % <br />off</em>
           <BlackBraceletImg />
         </LightGrayContainer>
