@@ -11,7 +11,7 @@ import { SectionSeparator } from './components/SectionSeparator/SectionSeparator
 import { StyledBrandName } from './styles/StyledApp';
 import { StyledLinksContainer } from './styles/StyledApp';
 import { SummerCollection } from './components/SummerCollection/SummerCollection';
-import { Testemonials } from './Testemonials';
+import { Testemonials } from './components/Testemonials/Testemonials';
 import { TopNavBar } from './components/NavigationBar/NavBar';
 import { QuickLinks } from './components/Navigation/Nav';
 

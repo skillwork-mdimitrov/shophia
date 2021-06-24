@@ -1,7 +1,7 @@
-import { colours } from './styles/commonColours';
-import { ReactComponent as ReviewFemaleImg } from './img/sandra-dewi-review.svg';
-import { ReactComponent as ReviewMaleImg } from './img/shaheer-sheikh-review.svg';
-import { StyledAbsTriangleNeck } from './styles/StyledAbsTriangleNeck';
+import { colours } from '../../styles/commonColours';
+import { ReactComponent as ReviewFemaleImg } from '../../img/sandra-dewi-review.svg';
+import { ReactComponent as ReviewMaleImg } from '../../img/shaheer-sheikh-review.svg';
+import { StyledAbsTriangleNeck } from '../../styles/StyledAbsTriangleNeck';
 
 const Testemonials = () =>
   <div className="container-fluid" style={{
