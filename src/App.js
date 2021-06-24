@@ -10,7 +10,7 @@ import { RibbonArea } from './components/RibbonArea/RibbonArea';
 import { SectionSeparator } from './components/SectionSeparator/SectionSeparator';
 import { StyledBrandName } from './styles/StyledApp';
 import { StyledLinksContainer } from './styles/StyledApp';
-import { SummerCollection } from './SummerCollection';
+import { SummerCollection } from './components/SummerCollection/SummerCollection';
 import { Testemonials } from './Testemonials';
 import { TopNavBar } from './components/NavigationBar/NavBar';
 import { QuickLinks } from './components/Navigation/Nav';
