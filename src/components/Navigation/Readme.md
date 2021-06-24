@@ -1,7 +1,7 @@
 A React Bootstrap Nav component that generates a row of clickable navigation links.<br>
 
 #### Technical details
-More on the underlying lib - https://react-bootstrap.github.io/components/navs/
+More on the underlying Nav component - https://react-bootstrap.github.io/components/navs/
 
 ```js
 import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from '../Icon/AwesomeIcons';
