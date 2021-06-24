@@ -1,6 +1,6 @@
 import './styles/App.scss';
 
-import { BrandSection } from './BrandSection';
+import { BrandSection } from './components/Brand/BrandSection';
 import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './AwesomeIcons';
 import { CurrencyDropdownBtn } from './DropdownButton';
 import { HandPicked } from './HandPicked';

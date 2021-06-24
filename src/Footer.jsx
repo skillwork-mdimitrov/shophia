@@ -1,7 +1,7 @@
 import { facebookIcon, twitterIcon, instagramIcon, pinterestIcon } from './AwesomeIcons';
 import { QuickLinks } from './Nav';
 
-const socialMediaLinks = [facebookIcon, twitterIcon, pinterestIcon, instagramIcon]
+const socialMediaLinks = [facebookIcon, twitterIcon, instagramIcon, pinterestIcon]
 
 const Footer = () =>
   <>
@@ -48,7 +48,7 @@ const Footer = () =>
                   <a href="#!" className="text-white">About us</a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">Custoemr Service</a>
+                  <a href="#!" className="text-white">Customer Service</a>
                 </li>
                 <li>
                   <a href="#!" className="text-white">New Collection</a>
