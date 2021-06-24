@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import { checkIcon, clockIcon, planeIcon } from './components/Icon/AwesomeIcons';
-import { colours } from './styles/commonColours';
+import { checkIcon, clockIcon, planeIcon } from '../Icon/AwesomeIcons';
+import { colours } from '../../styles/commonColours';
 
 const StyledRibbonContainer = styled.div`
   display: flex;

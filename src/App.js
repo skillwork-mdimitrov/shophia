@@ -6,7 +6,7 @@ import { CurrencyDropdownBtn } from './components/DropdownButton/CurrencyDropdow
 import { HandPicked } from './components/HandPicked/HandPicked';
 import { Footer } from './components/Footer/Footer';
 import { PhotoshootCarousel } from './components/Carousel/PhotoshootCarousel';
-import { RibbonArea } from './RibbonArea';
+import { RibbonArea } from './components/RibbonArea/RibbonArea';
 import { SectionSeparator } from './SectionSeparator';
 import { StyledBrandName } from './styles/StyledApp';
 import { StyledLinksContainer } from './styles/StyledApp';
