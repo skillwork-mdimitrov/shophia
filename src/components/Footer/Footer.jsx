@@ -1,5 +1,5 @@
-import { facebookIcon, twitterIcon, instagramIcon, pinterestIcon } from './components/Icon/AwesomeIcons';
-import { QuickLinks } from './Nav';
+import { facebookIcon, twitterIcon, instagramIcon, pinterestIcon } from '../Icon/AwesomeIcons';
+import { QuickLinks } from '../../Nav';
 
 const socialMediaLinks = [facebookIcon, twitterIcon, instagramIcon, pinterestIcon]
 
@@ -119,14 +119,13 @@ const Footer = () =>
                     </div>
 
                     <div className="col-md-5 col-12">
-                      <div className="form-outline form-white mb-4">
+                      <div className="form-outline form-white">
                         <input type="email" id="form5Example2" className="form-control" />
                         <label className="form-label" htmlFor="form5Example2">Email address</label>
+                        <button type="submit" className="btn btn-outline-light">
+                          Subscribe
+                        </button>
                       </div>
-
-                      <button type="submit" className="btn btn-outline-light">
-                        Subscribe
-                      </button>
                     </div>
                   </div>
                 </form>

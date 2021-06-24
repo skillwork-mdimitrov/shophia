@@ -1,13 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import styled from 'styled-components';
 
-import { colours } from './styles/commonColours';
-import { ReactComponent as BlackBootsImg } from './img/boots-black.svg';
-import { ReactComponent as BlackBraceletImg } from './img/bracelet-black.svg';
-import { ReactComponent as BlackPouchImg } from './img/black-pouch.svg';
-import { ReactComponent as BraceletSilverImg } from './img/bracelet-silver.svg';
-import { ReactComponent as ParisHiltonCollectionImg } from './img/paris-hilton-collection.svg';
-import { StyledAbsCenteredXYDiv } from './styles/StyledAbsCenteredDiv';
+import { colours } from '../../styles/commonColours';
+import { ReactComponent as BlackBootsImg } from '../../img/boots-black.svg';
+import { ReactComponent as BlackBraceletImg } from '../../img/bracelet-black.svg';
+import { ReactComponent as BlackPouchImg } from '../../img/black-pouch.svg';
+import { ReactComponent as BraceletSilverImg } from '../../img/bracelet-silver.svg';
+import { ReactComponent as ParisHiltonCollectionImg } from '../../img/paris-hilton-collection.svg';
+import { StyledAbsCenteredXYDiv } from '../../styles/StyledAbsCenteredDiv';
 
 const AbsoluteWhiteFrame = styled(StyledAbsCenteredXYDiv)`
   border: 3px solid white;

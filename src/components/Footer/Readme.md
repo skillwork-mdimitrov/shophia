@@ -2,5 +2,5 @@ A React Bootstrap DropdownButton, allowing for the selection of different curren
 The component has internal state storing the currently selected currency.
 
 ```js
-<CurrencyDropdownBtn />
+<Footer />
 ```
