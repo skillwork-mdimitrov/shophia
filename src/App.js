@@ -2,7 +2,7 @@ import './styles/App.scss';
 
 import { BrandSection } from './components/Brand/BrandSection';
 import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './components/Icon/AwesomeIcons';
-import { CurrencyDropdownBtn } from './DropdownButton';
+import { CurrencyDropdownBtn } from './components/DropdownButton/CurrencyDropdownBtn';
 import { HandPicked } from './HandPicked';
 import { Footer } from './Footer';
 import { PhotoshootCarousel } from './components/Carousel/PhotoshootCarousel';
