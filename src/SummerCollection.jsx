@@ -9,6 +9,7 @@ import { ReactComponent as FemaleModel5 } from './img/SummerCollection/female-5.
 import { ReactComponent as MaleModel1 } from './img/SummerCollection/male-1.svg';
 import { ReactComponent as MaleModel2 } from './img/SummerCollection/male-2.svg';
 import { ReactComponent as MaleModel3 } from './img/SummerCollection/male-3.svg';
+import { StyledAbsXCenteredDiv } from './styles/StyledAbsCenteredDiv';
 
 const StyledGrayContainer = styled.div`
   background-color: ${colours.lightGray};

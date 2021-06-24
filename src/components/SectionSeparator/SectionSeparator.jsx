@@ -1,4 +1,5 @@
-import { StyledDiamond } from './styles/StyledDiamond';
+import PropTypes from 'prop-types'
+import { StyledDiamond } from '../../styles/StyledDiamond';
 
 const SectionSeparator = ({ text }) =>
   <div className="container-fluid" style={{ margin: "30px 0" }}>
@@ -15,5 +16,9 @@ const SectionSeparator = ({ text }) =>
       <hr className="col" />
     </div>
   </div>
+
+SectionSeparator.propTypes = {
+  text: PropTypes.string
+}
 
 export { SectionSeparator }
