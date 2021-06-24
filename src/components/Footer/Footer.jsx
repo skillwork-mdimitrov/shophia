@@ -1,5 +1,5 @@
 import { facebookIcon, twitterIcon, instagramIcon, pinterestIcon } from '../Icon/AwesomeIcons';
-import { QuickLinks } from '../../Nav';
+import { QuickLinks } from '../Navigation/Nav';
 
 const socialMediaLinks = [facebookIcon, twitterIcon, instagramIcon, pinterestIcon]
 

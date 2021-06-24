@@ -1,5 +1,7 @@
 import Nav from 'react-bootstrap/Nav';
+import PropTypes from 'prop-types'
 import styled from 'styled-components';
+
 
 const StyledNav = styled(Nav)`
   font-family: Playfair Display, serif;
@@ -13,7 +15,6 @@ const StyledNavLink = styled(Nav.Link)`
 const QuickLinks = ({ links }) => {
 
   const navLinks = links.map(link => {
-    // currently supports only font-awesome icons as links and pure strings (eg. Home, Gallery)
     const key = link?.props?.icon?.iconName ? link.props.icon.iconName : link;
     
     return (
@@ -28,6 +29,14 @@ const QuickLinks = ({ links }) => {
       {navLinks}
     </StyledNav>
   )
+}
+
+QuickLinks.propTypes = {
+  links: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.number),
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.arrayOf(PropTypes.object),
+  ])
 }
 
 export { QuickLinks }

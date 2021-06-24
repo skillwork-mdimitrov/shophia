@@ -13,7 +13,7 @@ import { StyledLinksContainer } from './styles/StyledApp';
 import { SummerCollection } from './SummerCollection';
 import { Testemonials } from './Testemonials';
 import { TopNavBar } from './NavBar';
-import { QuickLinks } from './Nav';
+import { QuickLinks } from './components/Navigation/Nav';
 
 function App() {
   const subPageLinks = ['Home', 'Gallery', 'Categories', 'Pages'];
