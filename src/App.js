@@ -12,7 +12,7 @@ import { StyledBrandName } from './styles/StyledApp';
 import { StyledLinksContainer } from './styles/StyledApp';
 import { SummerCollection } from './SummerCollection';
 import { Testemonials } from './Testemonials';
-import { TopNavBar } from './NavBar';
+import { TopNavBar } from './components/NavigationBar/NavBar';
 import { QuickLinks } from './components/Navigation/Nav';
 
 function App() {
