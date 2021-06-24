@@ -5,7 +5,7 @@ import { facebookIcon, instagramIcon, pinterestIcon, twitterIcon } from './compo
 import { CurrencyDropdownBtn } from './DropdownButton';
 import { HandPicked } from './HandPicked';
 import { Footer } from './Footer';
-import { PhotoshootCarousel } from './Carousel';
+import { PhotoshootCarousel } from './components/Carousel/PhotoshootCarousel';
 import { RibbonArea } from './RibbonArea';
 import { SectionSeparator } from './SectionSeparator';
 import { StyledBrandName } from './styles/StyledApp';
@@ -32,7 +32,7 @@ function App() {
         </div>
       </StyledLinksContainer>
 
-      <PhotoshootCarousel />
+      <PhotoshootCarousel/>
 
       <RibbonArea />
 
