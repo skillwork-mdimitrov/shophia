@@ -70,7 +70,7 @@ const StyledCircleText = styled.div`
   color: white;
 `;
 
-const modelCard = (pic) =>
+const modelCardFactory = (pic) =>
   <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
     <StyledGrayContainer className="d-flex justify-content-center rounded">
       {pic}
@@ -78,7 +78,7 @@ const modelCard = (pic) =>
     </StyledGrayContainer>
   </div >
 
-const modelCardDiscounted = (pic, discount) =>
+const modelCardFactoryDiscounted = (pic, discount) =>
   <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
     <StyledGrayContainer className="d-flex justify-content-center rounded">
       {pic}
@@ -93,14 +93,14 @@ const SummerCollection = () =>
   <>
     <div className="container-fluid">
       <div className="row">
-        {modelCardDiscounted(<MaleModel1/>, 20)}
-        {modelCard(<FemaleModel1 />)}
-        {modelCard(<FemaleModel2 />)}
-        {modelCardDiscounted(<MaleModel2/>, 40)}
-        {modelCardDiscounted(<FemaleModel3/>, 20)}
-        {modelCard(<FemaleModel4 />)}
-        {modelCard(<FemaleModel5 />)}
-        {modelCardDiscounted(<MaleModel3/>, 40)}
+        {modelCardFactoryDiscounted(<MaleModel1/>, 20)}
+        {modelCardFactory(<FemaleModel1 />)}
+        {modelCardFactory(<FemaleModel2 />)}
+        {modelCardFactoryDiscounted(<MaleModel2/>, 40)}
+        {modelCardFactoryDiscounted(<FemaleModel3/>, 20)}
+        {modelCardFactory(<FemaleModel4 />)}
+        {modelCardFactory(<FemaleModel5 />)}
+        {modelCardFactoryDiscounted(<MaleModel3/>, 40)}
       </div>
     </div>
   </>;
