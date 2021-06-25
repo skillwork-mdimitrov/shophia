@@ -36,7 +36,7 @@ You can learn more in the [Styleguidist documentation](https://react-styleguidis
 
 ### `npm run styleguide:build`
 
-Builds a production HTML version of the project's documentation. It will create a separate 'styleguide' folder.
+Builds a production HTML version of the project's documentation. It will create a separate *styleguide* folder.
 
 ## Learn More
 
