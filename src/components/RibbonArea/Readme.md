@@ -1,9 +1,9 @@
-The Ribbon area of Shophia
+The Ribbon area of Shophia.
 
 #### Technical details
 
 Known bugs:
-- Is not responsive
+- It is not responsive
 
 ```js
 <RibbonArea />

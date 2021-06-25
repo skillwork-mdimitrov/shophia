@@ -1,4 +1,4 @@
-The testemonials section of Shophia.
+The testemonials section of Shophia. Used for displaying user reviews.
 
 ```js
 <Testemonials />

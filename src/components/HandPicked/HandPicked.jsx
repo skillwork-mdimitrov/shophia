@@ -30,7 +30,7 @@ const SemiTransparentSquare = styled(StyledAbsCenteredXYDiv)`
 const HandPicked = () =>
   <div className="container-fluid">
     <div className="row">
-      <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <div className="col-xl-4 col-lg-12 col-md-12 mb-4 mb-lg-0">
         <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
           <SemiTransparentSquare />
           <Button className="text-uppercase" variant="warning" style={{
@@ -48,14 +48,14 @@ const HandPicked = () =>
         </LightGrayContainer>
       </div>
 
-      <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <div className="col-xl-4 col-lg-12 col-md-12 mb-4 mb-lg-0">
         <LightGrayContainer className="d-flex justify-content-end mb-4 rounded">
           <AbsoluteWhiteFrame />
           <ParisHiltonCollectionImg />
         </LightGrayContainer>
       </div>
 
-      <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <div className="col-xl-4 col-lg-12 col-md-12 mb-4 mb-lg-0">
         <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
           <AbsoluteWhiteFrame />
           <em style={{
