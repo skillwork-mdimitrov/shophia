@@ -46,5 +46,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Environment
 
-- Node.js version 14.17.0
-- NPM version 7.17.0
+- Node.js version *14.17.0*
+- NPM version *7.17.0*
