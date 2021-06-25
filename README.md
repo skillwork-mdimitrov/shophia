@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Shophia e-commerce demo shop
 
+Prior to running the scripts, run **npm i** in the main folder (*/shophia*) where *package.json* is located.
+
 ## Available Scripts
 
 In the project directory, you can run:
