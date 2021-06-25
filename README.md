@@ -26,16 +26,21 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run styleguide`
 
-Runs the styleguide dev server.
+The documentation of the project. The script will run the styleguide dev server on [http://localhost:6060](http://localhost:6060)
 
 You can learn more in the [Styleguidist documentation](https://react-styleguidist.js.org/docs/getting-started/)
 
 ### `npm run styleguide:build`
 
-Builds a production HTML version. It will create a separate 'styleguide' folder.
+Builds a production HTML version of the project's documentation. It will create a separate 'styleguide' folder.
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Environment
+
+- Node.js version 14.17.0
+- NPM version 7.17.0
