@@ -1,10 +1,10 @@
+# Shophia e-commerce demo shop
+
+Prior to running the scripts, run **npm i** in the main folder */shophia* where *package.json* is located.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-# Shophia e-commerce demo shop
-
-Prior to running the scripts, run **npm i** in the main folder (*/shophia*) where *package.json* is located.
 
 ## Available Scripts
 
