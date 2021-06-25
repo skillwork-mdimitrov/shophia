@@ -2,7 +2,6 @@ import Nav from 'react-bootstrap/Nav';
 import PropTypes from 'prop-types'
 import styled from 'styled-components';
 
-
 const StyledNav = styled(Nav)`
   font-family: Playfair Display, serif;
   margin-right: 20px;

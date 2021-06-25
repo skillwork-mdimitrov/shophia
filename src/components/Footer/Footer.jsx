@@ -110,7 +110,7 @@ const Footer = () =>
               </section>
 
               <section className="">
-                <form action="">
+                <form>
                   <div className="row d-flex flex-column">
                     <div className="col-auto">
                       <p className="pt-2">

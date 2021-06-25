@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+
 import { StyledDiamond } from '../../styles/StyledDiamond';
 
 const SectionSeparator = ({ text }) =>

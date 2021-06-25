@@ -68,9 +68,9 @@ const RibbonArea = () =>
       <span title="In Order Min $200">Free shipping</span>
     </StyledArrow>
 
-    <span href="#placeholder" className="ribbonContainer">
+    <span className="ribbonContainer">
       <span className="myButton ribbon">
-        {clockIcon}
+        <span className="pr-3">{clockIcon}</span>
         <span title="Money Back Guarantee">30-days returns</span>
       </span>
     </span>
