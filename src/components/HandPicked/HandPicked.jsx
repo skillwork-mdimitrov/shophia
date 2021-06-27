@@ -27,18 +27,30 @@ const SemiTransparentSquare = styled(StyledAbsCenteredXYDiv)`
   width: 80%;
 `;
 
+const StyledAbsButton = styled(Button)`
+  left: 50%;
+  position: absolute;
+  top: 75%;
+  transform: translate(-50%, -50%)
+`;
+
+const StyledAbsEm = styled.em`
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  text-transform: uppercase;
+  line-height: 1em;
+`;
+
 const HandPicked = () =>
   <div className="container-fluid">
     <div className="row">
       <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
           <SemiTransparentSquare />
-          <Button className="text-uppercase" variant="warning" style={{
-            left: '50%',
-            position: 'absolute',
-            top: '75%',
-            transform: 'translate(-50%, -50%)'
-          }}>Shop now</Button>{' '}
+          <StyledAbsButton className="text-uppercase" variant="warning">Shop now</StyledAbsButton>
           <BlackBootsImg />
         </LightGrayContainer>
 
@@ -58,15 +70,7 @@ const HandPicked = () =>
       <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
           <AbsoluteWhiteFrame />
-          <em style={{
-            left: '50%',
-            position: 'absolute',
-            top: '45%',
-            transform: 'translate(-50%, -50%)',
-            fontSize: '3em',
-            textTransform: 'uppercase',
-            lineHeight: '1em'
-          }}>50 % <br />off</em>
+          <StyledAbsEm>50 % <br />off</StyledAbsEm>
           <BlackBraceletImg />
         </LightGrayContainer>
 
