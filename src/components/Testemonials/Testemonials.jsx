@@ -1,14 +1,45 @@
+import styled from 'styled-components';
+
 import { colours } from '../../styles/commonColours';
 import { ReactComponent as ReviewFemaleImg } from '../../img/sandra-dewi-review.svg';
 import { ReactComponent as ReviewMaleImg } from '../../img/shaheer-sheikh-review.svg';
 import { StyledAbsTriangleNeck } from '../../styles/StyledAbsTriangleNeck';
 
-const Testemonials = () =>
-  <div className="container-fluid" style={{
-    backgroundColor: colours.straw,
-    position: 'relative'
-  }}>
+const StyledColouredDiv = styled.div`
+  background-color: ${colours.straw};
+  position: relative;
+`;
 
+const StyledSizedText = styled.p`
+  width: 50%;
+`;
+
+const StyledFontText = styled.em`
+  font-family: Playfair Display, serif;
+  font-size: 2em;
+`;
+
+const StyledFlexedDiv = styled.div`
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+`;
+
+const StyledFlexedText = styled.p`
+  display: inline-flex;  
+  text-align: end;
+  width: 50%;
+`;
+
+const StyledReviewerName = styled.em`
+  display: inline-flex;
+  font-family: Playfair Display, serif;
+  font-size: 2em;
+`;
+
+
+const Testemonials = () =>
+  <StyledColouredDiv className="container-fluid">
     <StyledAbsTriangleNeck />
 
     <div className="row pt-4 pb-4">
@@ -16,15 +47,15 @@ const Testemonials = () =>
         <ReviewFemaleImg />
 
         <div>
-          <p className="text-white" style={{ width: '50%' }}>
+          <StyledSizedText className="text-white">
             Sed ut perspiciatis
             unde omnis iste natus error sit
             voluptatem accusantium doloremque
-          </p>
+          </StyledSizedText>
 
-          <em className="mt-4" style={{ fontFamily: 'Playfair Display, serif', fontSize: '2em' }}>
+          <StyledFontText className="mt-4">
             Sandra Dewi
-          </em>
+          </StyledFontText>
           <p>FASHION STYLISH</p>
         </div>
 
@@ -32,24 +63,24 @@ const Testemonials = () =>
       <div className="col-lg-6 d-flex align-items-center">
         <div>
 
-          <div style={{ display: 'flex', alignItems: 'flex-end', flexDirection: 'column' }}>
-            <p className="text-white" style={{ width: '50%', display: 'inline-flex', textAlign: 'end' }}>
+          <StyledFlexedDiv>
+            <StyledFlexedText className="text-white">
               Sed ut perspiciatis
               unde omnis iste natus error sit
               voluptatem accusantium doloremque
-            </p>
+            </StyledFlexedText>
 
-            <em className="mt-4" style={{ display: 'inline-flex', fontFamily: 'Playfair Display, serif', fontSize: '2em' }}>
+            <StyledReviewerName className="mt-4">
               Shaheer Sheikh
-            </em>
+            </StyledReviewerName>
             <p>DESIGNER</p>
-          </div>
+          </StyledFlexedDiv>
         </div>
 
         <ReviewMaleImg />
 
       </div>
     </div>
-  </div>
+  </StyledColouredDiv>
 
 export { Testemonials }
