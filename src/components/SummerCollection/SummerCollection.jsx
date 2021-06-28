@@ -70,22 +70,16 @@ const StyledCircleText = styled.div`
   color: white;
 `;
 
-const modelCardFactory = (pic) =>
+const modelCardFactory = (pic, discount) =>
   <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
     <StyledGrayContainer className="d-flex justify-content-center rounded">
       {pic}
       <StyledAbsTrapezoid />
-    </StyledGrayContainer>
-  </div >
-
-const modelCardFactoryDiscounted = (pic, discount) =>
-  <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-    <StyledGrayContainer className="d-flex justify-content-center rounded">
-      {pic}
-      <StyledAbsTrapezoid />
-      <StyledResCircle>
-        <StyledCircleText>{discount}%</StyledCircleText>
-      </StyledResCircle>
+      {discount &&
+        <StyledResCircle>
+          <StyledCircleText>{discount}%</StyledCircleText>
+        </StyledResCircle>
+      }
     </StyledGrayContainer>
   </div>
 
@@ -93,14 +87,14 @@ const SummerCollection = () =>
   <>
     <div className="container-fluid">
       <div className="row">
-        {modelCardFactoryDiscounted(<MaleModel1/>, 20)}
+        {modelCardFactory(<MaleModel1 />, 20)}
         {modelCardFactory(<FemaleModel1 />)}
         {modelCardFactory(<FemaleModel2 />)}
-        {modelCardFactoryDiscounted(<MaleModel2/>, 40)}
-        {modelCardFactoryDiscounted(<FemaleModel3/>, 20)}
+        {modelCardFactory(<MaleModel2 />, 40)}
+        {modelCardFactory(<FemaleModel3 />, 20)}
         {modelCardFactory(<FemaleModel4 />)}
         {modelCardFactory(<FemaleModel5 />)}
-        {modelCardFactoryDiscounted(<MaleModel3/>, 40)}
+        {modelCardFactory(<MaleModel3 />, 40)}
       </div>
     </div>
   </>;
