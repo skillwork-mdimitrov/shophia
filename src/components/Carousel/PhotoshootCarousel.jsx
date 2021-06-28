@@ -13,6 +13,10 @@ const StyledCarouselCaption = styled(Carousel.Caption)`
 
 const StyledRelativeDiv = styled.div`
   position: relative;
+
+  @media (max-width: 576px) { 
+    display: none;
+  }
 `
 
 const carouselItemFactory = (modelPic) =>

@@ -34,7 +34,6 @@ const StyledReviewerName = styled.em`
   font-size: 2em;
 `;
 
-
 const Testemonials = () =>
   <StyledColouredDiv className="container-fluid">
     <StyledVNeckline />
