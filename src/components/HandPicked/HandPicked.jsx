@@ -17,7 +17,7 @@ const StyledAbsWhiteFrame = styled(StyledAbsCenteredXYDiv)`
 
 const StyledGrayContainer = styled.div`
   background-color: ${colours.lightGray};
-  position: relative
+  position: relative;
 `;
 
 const StyledOpaqueSquare = styled(StyledAbsCenteredXYDiv)`
@@ -31,7 +31,7 @@ const StyledAbsButton = styled(Button)`
   left: 50%;
   position: absolute;
   top: 75%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 `;
 
 const StyledAbsEm = styled.em`

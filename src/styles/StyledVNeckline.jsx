@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { StyledAbsXCenteredDiv } from './StyledAbsCenteredDiv';
 
-const StyledAbsTriangleNeck = styled(StyledAbsXCenteredDiv)`
+const StyledVNeckline = styled(StyledAbsXCenteredDiv)`
   width: 0;
   height: 0;
   border-left: ${({ borderLeft = 200}) => borderLeft}px solid transparent;
@@ -11,4 +11,4 @@ const StyledAbsTriangleNeck = styled(StyledAbsXCenteredDiv)`
   z-index: 1;
 `;
 
-export { StyledAbsTriangleNeck }
+export { StyledVNeckline }

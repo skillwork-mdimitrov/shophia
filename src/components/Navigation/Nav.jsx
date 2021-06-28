@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components';
 
 const StyledNav = styled(Nav)`
-  font-family: Playfair Display, serif;
+  font-family: 'Playfair Display', serif;
   margin-right: 20px;
 `;
 

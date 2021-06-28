@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { StyledDiamond } from '../../styles/StyledDiamond';
 
 const StyledSeparatorText = styled.p`
-  font-family: Playfair Display, serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.5em;
 `;
 

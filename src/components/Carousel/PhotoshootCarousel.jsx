@@ -5,7 +5,7 @@ import { ReactComponent as Model1Photoshoot } from '../../img/CarouselModels/mod
 import { ReactComponent as Model2Photoshoot } from '../../img/CarouselModels/model-2.svg';
 import { ReactComponent as Model3Photoshoot } from '../../img/CarouselModels/model-3.svg';
 import { ReactComponent as MidSeasonSale } from '../../img/mid-season-sale.svg';
-import { StyledAbsTriangleNeck } from '../../styles/StyledAbsTriangleNeck';
+import { StyledVNeckline } from '../../styles/StyledVNeckline';
 
 const StyledCarouselCaption = styled(Carousel.Caption)`
   top: 15%;
@@ -25,7 +25,7 @@ const carouselItemFactory = (modelPic) =>
 
 const PhotoshootCarousel = () =>
   <StyledRelativeDiv>
-    <StyledAbsTriangleNeck borderTop={60} />
+    <StyledVNeckline borderTop={60} />
     <Carousel>
       {carouselItemFactory(<Model3Photoshoot/>)}
       {carouselItemFactory(<Model2Photoshoot/>)}

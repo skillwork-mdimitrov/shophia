@@ -12,7 +12,7 @@ import { ReactComponent as MaleModel3 } from '../../img/SummerCollection/male-3.
 
 const StyledGrayContainer = styled.div`
   background-color: ${colours.lightGray};
-  position: relative
+  position: relative;
 `;
 
 const StyledTrapezoidShape = styled.div`
