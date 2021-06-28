@@ -1,15 +1,3 @@
-@import './ribbon.scss';
+// extend bootstrap here before import
 
-// Media queries
-@media (min-width: 1200px) and (max-width: 1600px) { 
-  .ribbon {
-    font-size: 1.5em;
-  }
-
-  .ribbon:after {
-    right: 8.5em;
-  }
-}
-
-// extend bootstrap before import
 @import "/node_modules/bootstrap-scss/";

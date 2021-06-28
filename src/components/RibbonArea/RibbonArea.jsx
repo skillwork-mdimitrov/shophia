@@ -57,7 +57,93 @@ const StyledIconContainer = styled.div`
   margin-left: 1.2em;
   margin-right: .6em;
   ${props => props.rotate && 'transform: rotate(-45deg);'}
-`; 
+`;
+
+const StyledMidRibbonContainer = styled.span`
+  color: white;
+  overflow: hidden;
+  display:  block;
+  margin: 0.75em;
+`;
+
+const StyledMidRibbonWrapper = styled.span`
+  letter-spacing: .1em;
+  text-decoration: center;
+  padding: 0.75em 1.25em 0.75em 1.75em;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  white-space: nowrap;
+  -webkit-transition: border-color 500ms ease, color 250ms ease;
+  -moz-transition: border-color 500ms ease, color 250ms ease;
+  -ms-transition: border-color 500ms ease, color 250ms ease;
+  -o-transition: border-color 500ms ease, color 250ms ease;
+  transition: border-color 500ms ease, color 250ms ease;
+
+  background-color: black;
+  font-size: 1.9em;
+  border-width: 2px 0;
+  position: relative;
+  display: inline-block;
+  width: 600px;
+  padding: 0.75em 0 0.75em 3.5em;
+
+  @media (min-width: 1200px) and (max-width: 1600px) { 
+    font-size: 1.5em;
+  } 
+
+  &::before {
+    background-color: white;
+
+    content: '';
+    display:inline-block;
+    border-bottom-width:2px;
+    border-left-width:2px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    position:absolute;
+    top:-50%;
+    bottom:50%;
+    left:1.6em;
+    right:0;
+  }
+
+  &::after {
+    background-color: white;
+
+    content: "";
+    display: inline-block;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    position: absolute;
+    top: -50%;
+    bottom: 50%;
+    left: 0;
+    right: 1.6em;
+
+    @media (min-width: 1200px) and (max-width: 1600px) { 
+      right: 8.5em;
+    }
+  } 
+`;
 
 const RibbonArea = () =>
   <StyledRibbonContainer className="text-uppercase">
@@ -68,12 +154,12 @@ const RibbonArea = () =>
       <span title="In Order Min $200">Free shipping</span>
     </StyledArrow>
 
-    <span className="ribbonContainer">
-      <span className="myButton ribbon">
+    <StyledMidRibbonContainer>
+      <StyledMidRibbonWrapper>
         <span className="pr-3">{clockIcon}</span>
         <span title="Money Back Guarantee">30-days returns</span>
-      </span>
-    </span>
+      </StyledMidRibbonWrapper>
+    </StyledMidRibbonContainer>
 
     <StyledArrow pointingLeft>
       <StyledIconContainer>
