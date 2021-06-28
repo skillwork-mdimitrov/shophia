@@ -9,18 +9,18 @@ import { ReactComponent as BraceletSilverImg } from '../../img/bracelet-silver.s
 import { ReactComponent as ParisHiltonCollectionImg } from '../../img/paris-hilton-collection.svg';
 import { StyledAbsCenteredXYDiv } from '../../styles/StyledAbsCenteredDiv';
 
-const AbsoluteWhiteFrame = styled(StyledAbsCenteredXYDiv)`
+const StyledAbsWhiteFrame = styled(StyledAbsCenteredXYDiv)`
   border: 3px solid white;
   height: 85%;
   width: 85%;
 `;
 
-const LightGrayContainer = styled.div`
+const StyledGrayContainer = styled.div`
   background-color: ${colours.lightGray};
   position: relative
 `;
 
-const SemiTransparentSquare = styled(StyledAbsCenteredXYDiv)`
+const StyledOpaqueSquare = styled(StyledAbsCenteredXYDiv)`
   background-color: black;
   height: 80%;
   opacity: 0.2;
@@ -48,36 +48,36 @@ const HandPicked = () =>
   <div className="container-fluid">
     <div className="row">
       <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
-          <SemiTransparentSquare />
+        <StyledGrayContainer className="mb-4 d-flex justify-content-center rounded">
+          <StyledOpaqueSquare />
           <StyledAbsButton className="text-uppercase" variant="warning">Shop now</StyledAbsButton>
           <BlackBootsImg />
-        </LightGrayContainer>
+        </StyledGrayContainer>
 
-        <LightGrayContainer className='d-flex justify-content-center rounded'>
-          <AbsoluteWhiteFrame />
+        <StyledGrayContainer className='d-flex justify-content-center rounded'>
+          <StyledAbsWhiteFrame />
           <BraceletSilverImg />
-        </LightGrayContainer>
+        </StyledGrayContainer>
       </div>
 
       <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <LightGrayContainer className="d-flex justify-content-end mb-4 rounded">
-          <AbsoluteWhiteFrame />
+        <StyledGrayContainer className="d-flex justify-content-end mb-4 rounded">
+          <StyledAbsWhiteFrame />
           <ParisHiltonCollectionImg />
-        </LightGrayContainer>
+        </StyledGrayContainer>
       </div>
 
       <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <LightGrayContainer className="mb-4 d-flex justify-content-center rounded">
-          <AbsoluteWhiteFrame />
+        <StyledGrayContainer className="mb-4 d-flex justify-content-center rounded">
+          <StyledAbsWhiteFrame />
           <StyledAbsEm>50 % <br />off</StyledAbsEm>
           <BlackBraceletImg />
-        </LightGrayContainer>
+        </StyledGrayContainer>
 
-        <LightGrayContainer className='d-flex justify-content-center rounded'>
-          <AbsoluteWhiteFrame />
+        <StyledGrayContainer className='d-flex justify-content-center rounded'>
+          <StyledAbsWhiteFrame />
           <BlackPouchImg />
-        </LightGrayContainer>
+        </StyledGrayContainer>
       </div>
     </div>
   </div>
