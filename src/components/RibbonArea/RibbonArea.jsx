@@ -7,6 +7,10 @@ const StyledRibbonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 576px) { 
+    display: none;
+  }
 `;
 
 const StyledArrow = styled.div`
@@ -45,7 +49,7 @@ const StyledArrow = styled.div`
   @media (min-width: 1200px) and (max-width: 1600px) { 
     height: 70px;
   }
-
+  
   @media (max-width: 1199px) { 
     display: none
   }
