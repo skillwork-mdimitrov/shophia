@@ -3,15 +3,15 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import { useState } from 'react';
 import styled from 'styled-components';
 
+const StyledDropdownButton = styled(DropdownButton)`
+  @media (max-width: 576px) { 
+    display: none;
+  }`;
+
 const CurrencyDropdownBtn = () => {
   const [currency, setCurrency] = useState('RUPIAH');
 
   const onSelect = (eventKey, event) => setCurrency(event.target.text);
-
-  const StyledDropdownButton = styled(DropdownButton)`
-    @media (max-width: 576px) { 
-      display: none;
-    }`
 
   return (
     <StyledDropdownButton variant={"dark"} id="dropdown-basic-button" title={currency} onSelect={onSelect}>
