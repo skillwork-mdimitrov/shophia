@@ -1,3 +1,5 @@
+Design - https://dribbble.com/shots/2165903-Shophia-FREE-eCommerce-Template
+
 # Shophia e-commerce demo shop
 
 Prior to running the scripts, run **npm i** in the main folder */shophia* where *package.json* is located.
